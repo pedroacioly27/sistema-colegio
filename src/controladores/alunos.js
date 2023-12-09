@@ -27,7 +27,7 @@ const consultarNotas = (req, res) => {
     if (procurarMateria.length === 0) {
         return res.status(400).json({ "mensagem": "Nenhuma nota cadastrada para essa matéria!" })
     }
-    const procurarPorBimestre = aluno.notas.filter((bimestres) => {
+    const procurarPorBimestre = procurarMateria.filter((bimestres) => {
         return bimestres.bimestre === Number(bimestre)
     })
     console.log(procurarPorBimestre);
