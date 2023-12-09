@@ -58,9 +58,16 @@ const consultarNotas = (req, res) => {
     else {
         const mediaNaMateria = ((notaMensal + notaBimestral) / 2).toFixed(2)
         if (mediaNaMateria >= mediaAtual) {
-            return res.status(200).json({ "mensagem": `Você ficou com ${mediaNaMateria} na média, você passou nesse bimestre!` })
+            return res.status(200).json({
+                "nota mensal": notaMensal,
+                "nota bimestral": notaBimestral, "mensagem": `Você ficou com ${mediaNaMateria} na média, você passou nesse bimestre!`
+            })
         } else {
-            return res.status(200).json({ "mensagem": `Você ficou com ${mediaNaMateria} na média, você reprovou nesse bimestre!` })
+            return res.status(200).json({
+                "nota mensal": notaMensal,
+                "nota bimestral": notaBimestral,
+                "mensagem": `Você ficou com ${mediaNaMateria} na média, você reprovou nesse bimestre!`
+            })
         }
     }
 
