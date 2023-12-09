@@ -38,7 +38,7 @@
 ##### ![](./assets/listarAlunos.png)
 
 # Cadastro de Nota
-### Aqui o professor pode cadastrar nota, apenas duas notas podem ser cadastradas por bimestre, uma mensal e uma bimestral, caso tente cadastrar mais de uma "mensal" no mesmo bimestre, vai dar erro, caso coloque algo errado, também tem a funcionalidade de alterar nota
+### Aqui o professor pode cadastrar nota, apenas duas notas podem ser cadastradas por bimestre, uma mensal e uma bimestral, caso tente cadastrar mais de uma "mensal" no mesmo bimestre, vai dar erro, caso coloque algo errado, para isso, temos a funcionalidade de alterar a nota
 ##### ![](./assets/cadastrarNota.png)
 
 # Consultar nota
